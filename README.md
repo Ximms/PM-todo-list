@@ -1,16 +1,32 @@
-# todo_app
+# To-Do List App (Flutter)
 
-A new Flutter project.
+Aplikasi Flutter sederhana dengan fitur:
+- Tambah tugas
+- Centang tugas selesai
+- Hapus tugas
 
-## Getting Started
+# Struktur Folder
+lib/
+├── main.dart
+├── models/todo.dart
+├── providers/todo_provider.dart
+├── widgets/todo_item.dart
+└── pages/
+├── home_page.dart
+└── add_todo_page.dart
 
-This project is a starting point for a Flutter application.
+# Widget Tree
+MaterialApp
+└── HomePage
+├── AppBar
+├── ListView (TodoItem)
+└── FloatingActionButton → AddTodoPage
 
-A few resources to get you started if this is your first Flutter project:
+# Alasan Memakai Provider
+- Provider resmi direkomendasikan oleh Flutter.  
+- Mudah dipahami pemula.  
+- Memisahkan logic (data) dan UI, sehingga kode lebih rapi.  
+- Cocok untuk aplikasi kecil seperti To-Do List.
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+# link Reccord
+https://drive.google.com/file/d/1RA3LrfY0S9DEkPC590ZKQGyxqiiDuRRC/view?usp=sharing
